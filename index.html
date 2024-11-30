@@ -29,6 +29,8 @@
             }
         }
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 <style>
@@ -39,22 +41,44 @@
     }
 </style>
 
-<body class="body">
-    <section class="container ">
-        <header class="bg-orange-200 w-full ">
-            <div class=" header navbar bg-base-100 flex justify-center px-40">
-                <div class=" logo flex-1 py-4">
-                    <a class="btn btn-ghost text-xl px-2  text-logoc font-bold">SOIT</a>
-                </div>
-                <div class="">
-                    <ul class=" px-1 py-6 flex text-righth font-medium">
-                        <li class="px-2"><a>Home</a></li>
-                        <li class="px-2"><a>About</a></li>
-                        <li class="px-2"><a>Contact</a></li>
-                        <li class="px-2"><a>Login</a></li>
+<body class="body container mx-auto">
+    <section class=" mx-auto ">
+        <header class="bg-orange-300">
+            <div class="navbar bg-base-100  flex md:flex lg:justify-between">
+                <div class="w-full">
+                    <div class="dropdown relative lg:hidden md: w-full ">
+                        <!-- The trigger button -->
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
 
+                        <!-- Dropdown menu -->
+                        <ul tabindex="  "
+                            class="menu menu-sm dropdown-content absolute bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow left-0 -translate-x-4">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <a class="btn btn-ghost text-5xl font-bold mx-auto md: mx-auto   ">SH.02</a>
+                    </div>
+
+
+                </div>
+                <div class="navbar-center  lg:flex hidden">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home </a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact US</a></li>
+                        <li><a>LOGIN</a></li>
                     </ul>
                 </div>
+
             </div>
 
             <div class="text-center justify-center py-6">
@@ -64,22 +88,27 @@
                     Ipsum
                     available, but the
                     majority have suffered
-                    alteration in
+                    alteration in <br>
                     some form,
                     by injected humour, or randomised words which don't look even</p>
+                <button class="btn btn-secondary ">Explore More</button>
+
             </div>
             <img src="pictures/Rectangle 12.png" class="w-full h-auto " alt="">
         </header>
+
+
+
         <main>
             <section>
-                <div class="flex py-20">
-                    <div class=" grid grid-cols-2 w-2/4 gap-4 ">
-                        <img src="pictures/Rectangle 14.png" alt="">
-                        <img src="pictures/Rectangle 15.png" alt="">
-                        <img src="pictures/Rectangle 16.png" alt="">
-                        <img src="pictures/Rectangle 17.png" alt="">
+                <div class="  lg:flex lg:flex-row py-20 md:flex md: flex-col ">
+                    <div class="  h-auto grid grid-cols-1  gap-5 lg:grid lg:grid-cols-2 lg:w-2/4 lg:gap-2  ">
+                        <img class="w-full h-auto" src="pictures/Rectangle 14.png" alt="">
+                        <img class=" w-full h-auto" src="pictures/Rectangle 15.png" alt="">
+                        <img class="w-full h-auto" src="pictures/Rectangle 16.png" alt="">
+                        <img class="w-full h-auto" src="pictures/Rectangle 17.png" alt="">
                     </div>
-                    <div class="w-2/4 justify-center px-14 py-24 ">
+                    <div class="lg:w-2/4  lg:justify-center px-14 py-24 md: ">
                         <h4 class="text-5xl"> <span class="text-dark02 font-medium">Quick list</span> <span
                                 class="boldmidh font-bold">
                                 of Our</span> <span class="text-orange font-bold">Features</span></h4>
@@ -87,28 +116,34 @@
                             majority have
                             suffered alteration in some form,
                             by injected humour, or randomised words which don't look even</p>
-                        <button class="bg-orange btn  btn-secondary text-white ">Explore More</button>
+                        <button class="bg-orange btn  btn-secondary text-white w-44 h-16 ">Explore
+                            More</button>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="flex  ">
+                <div class="flex flex-col-reverse lg:flex lg:flex-row md: flex md:flex-col-reverse items-center  ">
 
-                    <div class="w-2/4">
+                    <div class="w-full lg:w-2/4 md: py-12 ">
 
-                        <h1 class="font-bold text-logoc text-4xl border-l-4 border-orange ">Features you will love &
+                        <h1 class="font-bold text-logoc text-4xl border-l-4 border-orange px-3 md:text-center pt-7 ">
+                            Features you will
+                            love &
                             enjoy</h1>
-                        <p class="dark02 font-normal text-base py-3">There are many variations of passages of Lorem
+                        <p class="dark02 font-normal text-base py-3 md: pt-5 ">There are many variations of passages of
+                            Lorem
                             Ipsum
                             available,
                             but the
                             majority have suffered alteration in some form,
                             by injected humour, or randomised words which don't look even</p>
-                        <div class="grid grid-cols-1 gap-8 h-auto w-full">
-                            <div class="card bg-base-100 w-96 shadow-xl ">
-                                <div class="card-body">
-                                    <h2 class="card-title font-bold">Desktop & Mobile Version</h2>
-                                    <p class="font-normal text-base text-dark02">There are many variations of passages
+                        <div
+                            class=" grid grid-cols-1 pl-24  mx-auto lg:grid lg:grid-cols-1 lg:pl-0 gap-8 md:py-lg:w-2/4 lg:w-full lg:h-auto h-auto w-full py-5 md:pl-40 pt-8">
+                            <div class="card bg-base-100   w-96 shadow-xl  ">
+                                <div class="card-body ">
+                                    <h2 class="card-title font-bold py-4 ">Desktop & Mobile Version</h2>
+                                    <p class="font-normal text-base text-dark02 py-2">There are many variations of
+                                        passages
                                         of Lorem Ipsum
                                         available, but the majority
                                         have suffered alteration in some form,
@@ -118,8 +153,9 @@
                             </div>
                             <div class="card bg-base-100 w-96 shadow-xl ">
                                 <div class="card-body">
-                                    <h2 class="card-title font-bold text-base">Desktop & Mobile Version</h2>
-                                    <p class="font-normal text-dark02 text-base">There are many variations of passages
+                                    <h2 class="card-title font-bold text-base py-4">Desktop & Mobile Version</h2>
+                                    <p class="font-normal text-dark02 text-base py-2">There are many variations of
+                                        passages
                                         of Lorem Ipsum
                                         available, but the majority
                                         have suffered alteration in some form,
@@ -129,8 +165,9 @@
                             </div>
                             <div class="card bg-base-100 w-96 shadow-xl ">
                                 <div class="card-body">
-                                    <h2 class="card-title font-bold text-base">Desktop & Mobile Version</h2>
-                                    <p class="font-normal text-base text-dark02">There are many variations of passages
+                                    <h2 class="card-title font-bold text-base py-4">Desktop & Mobile Version</h2>
+                                    <p class="font-normal text-base text-dark02 py-2">There are many variations of
+                                        passages
                                         of Lorem
                                         Ipsum
                                         available, but the majority
@@ -141,8 +178,8 @@
                             </div>
                             <div class="card bg-base-100 w-96 shadow-xl ">
                                 <div class="card-body">
-                                    <h2 class="card-title font-bold">Desktop & Mobile Version</h2>
-                                    <p class="font-normal text-base text-dark02">There are many variations of
+                                    <h2 class="card-title font-bold py-4">Desktop & Mobile Version</h2>
+                                    <p class="font-normal text-base text-dark02 py-2">There are many variations of
                                         passages of Lorem
                                         Ipsum
                                         available, but the majority
@@ -153,44 +190,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-2/4 relative px-16">
-                        <img src="pictures/Rectangle 4.png" alt="">
-                        <div class="absolute bottom-0 left-0 bg-orange-400 -translate-x-5 translate-y-6 ">
-                            <p class="font-bold text-6xl text-white">10+ Year</p><br>
-                            <p class="font-medium text-white text-2xl ">Experience</p>
-                        </div>
+                    <div class="lg:relative lg:h-auto px-16 lg:pb-24">
+                        <!-- Image -->
+                        <img class="lg:w-full lg:h-auto " src="pictures/Rectangle 4.png" alt="">
+
+                        <!-- Overlay content 10+ Experience -->
+
                     </div>
+
+
+                </div>
                 </div>
 
             </section>
             <section class="py-40">
                 <h4 class="font-bold text-5xl text-black ">Some facts</h4>
-                <p class="py-4">There are many variations of passages of Lorem Ipsum available, but the majority have
+                <p class="py-4 text-dark02">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have
                     suffered
                     alteration.</p>
                 <div class="flex justify-between">
-                    <div class="border border-orange">
+                    <div class="border border-orange px-5 py-5">
                         <img src="pictures/Group 22.png" alt=""><br>
                         <p class="text-5xl font-semibold">54</p><br>
                         <p class="dark02 text-xl font-semibold">Award winnings</p>
                     </div>
-                    <div class="border border-orange">
+                    <div class="border border-orange px-5 py-5">
                         <img src="pictures/Group 28.png" alt=""><br>
                         <p class="text-5xl font-semibold">1458</p> <br>
                         <p class="dark02 text-xl font-semibold">Project Finished</p>
-                    </div class="border border-orange">
-                    <div class="border border-orange">
+                    </div class="border border-orange px-5 py-5">
+                    <div class="border border-orange px-5 py-5">
                         <img src="pictures/Group 29.png" alt=""><br>
                         <p class="text-5xl font-semibold">590</p> <br>
                         <p class="dark02 text-xl font-semibold">Clients Worked</p>
                     </div class="border border-orange">
-                    <div class="border border-orange">
+                    <div class="border border-orange px-5 py-5">
                         <img src="pictures/Group 30.png" alt=""><br>
                         <p class="text-5xl font-semibold">22500</p> <br>
                         <p class="dark02 text-xl font-semibold">Emails Sent</p>
                     </div>
                 </div>
-                <div class="py-16">
+                <div class="py-36">
                     <div class="flex flex-col text-center ">
                         <h4 class="font-bold text-4xl text-black font ">Our Sponsors</h4>
                         <p class="font-normal text-xl text-dark02 py-3">There are many variations of passages of Lorem
@@ -200,19 +241,34 @@
                             suffered
                             alteration.</p>
                     </div>
-                    <div class="flex justify-between py-14">
-                        <div><img src="pictures/Amazon Logo.png" alt=""></div>
-                        <div><img src="pictures/figma Logo.png" alt=""></div>
-                        <div><img src="pictures/google Logo.png" alt=""></div>
-                        <div><img src="pictures/spotify Logo.png" alt=""></div>
-                        <div><img src="pictures/Telerama Logo.png" alt=""></div>
+                    <div
+                        class=" flex flex-col items-center lg:flex lg:flex-row  lg:py-14 md: flex md: flex-col md:items-center md:justify-between lg:justify-between">
+                        <div class=" py-10 md:py-20"><img src="pictures/Amazon Logo.png" alt=""></div>
+                        <div class=" py-10 md:py-20"><img src="pictures/figma Logo.png" alt=""></div>
+                        <div class=" py-10 md:py-20"><img src="pictures/google Logo.png" alt=""></div>
+                        <div class="py-10 md:py-20"><img src="pictures/spotify Logo.png" alt=""></div>
+                        <div class="py-10 md:py-20"><img src="pictures/Telerama Logo.png" alt=""></div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="flex justify-between bg-slate-800 px-4">
+                <div>
+                    <br> <br>
+                    <p class="text-white">© 2024. All rights reserved</p>
+                </div>
+                <div class="flex flex-col ">
+                    <div>
+                        <h6 class="text-white">Get the App</h6> <br>
+                    </div>
+                    <div><img src="pictures/Apple badge .png" alt=""></div>
+                    <div><img src="pictures/Google Play Badge.png" alt=""></div>
+                </div>
+            </section>
+        </footer>
     </section>
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
